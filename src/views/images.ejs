@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FotoCard</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1><a href="/">FotoCard</a></h1>
+    </header>
+
+    <main>
+        
+        <div class="tarjetaImg">
+
+            <h2><%= image.titulo%></h2>
+
+            <div class="cajaImg">
+                <a href="../images/<%= image.filename %>"><img src="../images/<%= image.filename %>" alt=""></a>
+            </div>
+
+            <p class="pie">D e s c r i p c i ó n :  <%= image.descripcion%></p>
+
+        </div>
+
+        <div class="cajaComentarios">
+            <h3>Comentarios</h3>
+            <hr>
+            <div class="comentarios">
+            
+                <%if (comment.length > 0) { %>
+
+                    <% comment.forEach(element => { %>
+
+                        <div class="tarjetaComment">
+
+                            <h3><%= element.name%></h3>
+
+                            <p><%= element.coment%></p>
+
+                        </div>
+
+                        <hr>
+
+                    <% }); %>
+
+                <% } %>
+
+            </div>
+            <form action="/comment/<%= image.filename%>" method="POST" id="formCom">
+                <input type="text" id="nameCom" name="nombre" placeholder="Su Nombre" required maxlength="30">
+                <hr>
+                <textarea id="descCom" name="comentario" placeholder="Comentario" required maxlength="250"></textarea>
+                <input type="submit" value="Enviar" id="enviarComment">
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Derechos Reservados por FotoCard® , Esta página no se hace responsable,
+            por el mal uso que le den, muchas gracias por utilizarlo. </p>
+    </footer>
+    
+    <script src="../js/main2.js"></script>
+</body>
+</html>

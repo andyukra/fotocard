@@ -1,0 +1,274 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:moccasin;
+    font-family: 'Righteous', cursive;
+    color:white;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+    background-color:#2d2d2d;
+    color:white;
+    box-shadow: 0 0 10px 1px black
+}
+
+header h1 a {
+    text-decoration: none;
+    color:white;
+}
+
+main {
+    padding:20px;
+    display:flex;
+}
+
+.cajaFormImg {
+    width: 40%;
+    padding: 20px;
+    background-color:#2d2d2d;
+    margin:4% auto;
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 0 2px 2px black;
+}
+
+hr {
+    border:1px solid black;
+    margin: 10px 0 10px 0;
+}
+
+.cajaFormImg input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.cajaFormImg input[type="submit"] {
+    display: block;
+    margin: 20px 0 10px 0;
+    padding: 10px;
+    font-size:30px;
+    width: 100%;
+    cursor:pointer;
+    font-family: "HandelGothicEF";
+    background-color:mediumaquamarine;
+    border:none;
+    border-radius:10px;
+    transition:0.5s;
+    box-shadow:0 0 2px 2px rgba(0,0,0,0.3),
+        inset 1px 1px 3px white;
+}
+
+.cajaFormImg input[type="submit"]:hover {
+    box-shadow: inset 0 0 4px black;
+}
+
+.cajaFormImg label {
+    cursor:pointer;
+    font-size:50px;
+    background-color: black;
+    border-radius:10px;
+    padding: 2px 10px 2px 10px;
+}
+
+.cajaFormImg h3 {
+    padding: 10px;
+    color:white;
+}
+
+
+.pathImg {
+    margin-left:10px;
+    font-family:"HandelGothicEF";
+    padding: 10px;
+    background-color: white;;
+    color:black;
+    border-radius:10px;
+    min-height: 60px;
+    display:flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tarjetaImg {
+    width: 50%;
+    margin:20px auto;
+}
+
+.cajaImg {
+    width: 100%;
+}
+
+.cajaImg img {
+    width: 100%;
+    cursor:pointer;
+    border:2px solid black;
+}
+
+.descr {
+    display:flex;
+    flex-direction: column;
+}
+
+.descr input[type="text"] {
+    margin:5px 0;
+    padding: 10px;
+    font-size:25px;
+    font-weight:bolder;
+    border-radius:5px;
+    border: 1px solid black;
+    font-family: "AdLib BT";
+}
+
+.textarea {
+    resize : none;
+    height: 100px;
+    padding: 10px;
+    font-size:20px;
+    border-radius:5px;
+    font-family: "AdLib BT";
+}
+
+.tarjetaImg h2 {
+    text-align: center;
+    font-size:50px;
+    padding: 10px;
+    background-color:#2d2d2d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.pie {
+    background-color:#2d2d2d;
+    padding: 20px;
+    width: 100%;
+    display:block;
+    margin-top:-1%;
+}
+
+.cajaDescripcion {
+    width: 40%;
+    margin: 4% auto;
+}
+
+.bienvenida {
+    padding: 20px;
+    background:linear-gradient(45deg, rgba(0,0,0,0.3) 70%, black 20%);
+    border-radius:10px;
+}
+
+.bienvenida p {
+    color:white;
+    text-align: center;
+    font-size:20px;
+}
+
+.instruc {
+    margin-top:4%;
+    text-align: left;
+    color:black;
+    font-size:20px;
+    padding: 20px;
+    border-radius:20px;
+    box-shadow:0 0 2px 2px rgba(0,0,0,0.3),
+        inset 0px 0px 2px white;
+}
+
+.cajaComentarios {
+    width: 40%;
+    padding: 20px;
+    background-color:#2d2d2d;
+    margin:20px auto;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.cajaComentarios form {
+    margin-top:5%;
+    padding: 12px;
+    border-radius:20px;
+}
+
+.cajaComentarios h3 {
+    text-align: center;
+}
+
+.cajaComentarios input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    font-size:20px;
+    border-radius:5px;
+    border:1px solid black;
+}
+
+.cajaComentarios textarea {
+    width: 100%;
+    padding: 5px;
+    font-size:20px;
+    resize: none;
+    min-height: 70px;
+    border-radius:5px;
+    border:1px solid black;
+}
+
+.cajaComentarios input[type="submit"] {
+    display:block;
+    width: 100%;
+    padding: 10px;
+    font-size:20px;
+    font-family: "HandelGothicEF";
+    border:1px solid black;
+    background-color: mediumaquamarine;
+    color:black;
+    border-radius:5px;
+    cursor:pointer;
+    box-shadow: inset 2px 2px 2px white;
+    margin: 10px 0;
+}
+
+.cajaComentarios input[type="submit"]:hover {
+    box-shadow: inset 0 0 4px black;
+}
+
+.tarjetaComment {
+    padding: 10px;
+    background-color:moccasin;
+    border-radius:10px;
+    margin:10px 0;
+    border:2px solid white;
+}
+
+.tarjetaComment h3 {
+    background-color:#2d2d2d;
+    color:white;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.tarjetaComment p {
+    padding: 15px;
+    color:black;
+    background-color: white;
+    word-break: break-all;
+    hyphens: auto;
+}
+
+footer p {
+    padding: 20px;
+    text-align: center;
+    color:white;
+    background-color: rgba(0,0,0,0.5);
+}
