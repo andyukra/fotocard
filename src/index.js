@@ -35,7 +35,7 @@ app.use(multer({
         }
 
     },
-    limits : { fileSize : '15MB' }
+    limits : { fileSize : '10MB' }
 }).single('imgUp'));
 
 app.use(require('./routes/index'));
